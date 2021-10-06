@@ -1,4 +1,3 @@
-from os import write
 import pandas as pd
 import re
 from bs4 import BeautifulSoup
