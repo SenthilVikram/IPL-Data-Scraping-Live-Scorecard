@@ -14,6 +14,13 @@ Final CSV file:
 
 <img src="https://user-images.githubusercontent.com/47270916/136181445-6b508fad-8e1f-434a-801c-b24453cb6f5a.png" width="500">
 
+### How to use?
+- Go to [iplt20.com](https://www.iplt20.com/) and choose a match. The url should look like https://www.iplt20.com/match/2021/51?tab=scorecard
+- Now right click and choose inspect element, right click on the top <html> tag and click edit as html. Copy all the code by Ctrl+A. 
+- Create a Doc.html file and paste all the code in it. 
+NOTE: You have to do this everytime you want to generate the new csv file or updated score of live match. (Will work on automating this too). 
+- Now run the python file ipl_scraper.py. You can type "python3 ipl_scraper.py" in terminal to run it. Make sure both the files are in same directory and command line directory is set to it. You should now see the csv file generated. 
+
 ### Idea
 - Using beautiful soup python package to select, navigate, filter, delete and get text from html doc
 - Manually copy pasted the entire HTML from inspect element tool in the webpage of the match.  (because some web pages fill in the inspect element html data using Javascript, and what appears to be the page content is not actually in the HTML that Beautiful Soup is processing. This is one of those pages). Later I will try to automate this process too using 'requests-html' library as suggested [here](https://stackoverflow.com/a/53754005/12705907).
