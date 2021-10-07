@@ -33,7 +33,7 @@ NOTE: You have to do this everytime you want to generate the new csv file or upd
 
 ### Idea
 - Using beautiful soup python package to select, navigate, filter, delete and get text from html doc
-- Manually copy pasted the entire HTML from inspect element tool in the webpage of the match.  (because some web pages fill in the inspect element html data using Javascript, and what appears to be the page content is not actually in the HTML that Beautiful Soup is processing. This is one of those pages). Later I will try to automate this process too using 'requests-html' library as suggested [here](https://stackoverflow.com/a/53754005/12705907).
+- Manually copy paste the entire HTML from inspect element tool in the webpage of the match.  (because some web pages fill in the inspect element html data using Javascript, and what appears to be the page content is not actually in the HTML that Beautiful Soup is processing. This is one of those pages). Later I will try to automate this process too using 'requests-html' library as suggested [here](https://stackoverflow.com/a/53754005/12705907).
 - Accessed the html file through beautiful soup
 - Went through the html code to see where the scorecard tables are present and navigated to it through beautiful soup. 
 - Converted each html table in the selected div to list data type and further converted it to csv file through pandas
